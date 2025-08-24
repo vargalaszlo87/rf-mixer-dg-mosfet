@@ -14,3 +14,6 @@ It's simple, but this circuit has good features:
 - bandwidth is 9kHz for AM receiving
 - stable
 
+## 🧭 Let's see how it works
+
+The coupling capacitors (C1, C5) route the signals to the two gates. These values are good choices for more bands. 
