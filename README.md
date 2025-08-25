@@ -6,7 +6,7 @@ The dual-gate MOSFET acts as an RF multiplier. The RF signal is general fed to f
 
 ## The circuit
 
-<img width="679" height="666" alt="image" src="https://github.com/user-attachments/assets/6317e949-ca12-4302-aa47-a0267e6bb907" />
+<img width="711" height="687" alt="image" src="https://github.com/user-attachments/assets/856e7a13-110a-4c03-833a-be842db9d888" />
 
 It's simple, but this circuit has good features:
 
@@ -16,4 +16,4 @@ It's simple, but this circuit has good features:
 
 ## 🧭 Let's see how it works
 
-The coupling capacitors (C1, C5) route the signals to the two gates. These values are good choices for more bands. 
+The coupling capacitors (C1, C2) route the signals to the two gates. These values are good choices for more bands. What size gate resistor is the best? This question is not trivial. Choosing a higher value menas less load in the previous stage, but more sensitive to noise. If it is smaller, it is less sensitive to noise, but the load is greater. In this case the value 100k (R1, R2) is a good compromise, many factory circuits use it.
