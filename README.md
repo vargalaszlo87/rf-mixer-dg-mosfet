@@ -6,7 +6,7 @@ The dual-gate MOSFET acts as an RF multiplier. The RF signal is general fed to f
 
 ## The circuit
 
-<img width="711" height="687" alt="image" src="https://github.com/user-attachments/assets/856e7a13-110a-4c03-833a-be842db9d888" />
+<img width="623" height="622" alt="image" src="https://github.com/user-attachments/assets/cbf5cc4e-8c6c-409a-842f-ea128f59aa5d" />
 
 It's simple, but this circuit has good features:
 
