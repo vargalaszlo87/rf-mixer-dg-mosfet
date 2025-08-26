@@ -17,3 +17,6 @@ It's simple, but this circuit has good features:
 ## 🧭 Let's see how it works
 
 The coupling capacitors (C1, C2) route the signals to the two gates. These values are good choices for more bands. What size gate resistor is the best? This question is not trivial. Choosing a higher value menas less load in the previous stage, but more sensitive to noise. If it is smaller, it is less sensitive to noise, but the load is greater. In this case the value 100k (R1, R2) is a good compromise, many factory circuits use it. (*by the way, these input "networks" (C1, R1 and C2, R2) are highpass filters,  **indeed!** T filters with Cgs1 and Cgs2, but it isn't important in this case*)
+
+The network of source includes a resistor and a capacitor. In this case the resistor is a tool for biasing of MOSFET (source degeneration, Further information can be found at the following link: [ECE 255, MOSFET Basic
+Configurations](https://engineering.purdue.edu/wcchew/ece255s18/ece%20255%20s18%20latex%20pdf%20files/ece255Lecture_16_Mar8_MOSFET_Basic_Config.pdf))
