@@ -23,17 +23,24 @@ Configurations](https://engineering.purdue.edu/wcchew/ece255s18/ece%20255%20s18%
 
 **Let's calc!**
 
-So, in this case the value of Rs is 470ohm. It would be good if the value of Xc were 47ohm on the given frequency. 
+So, in this case the value of Rs is 470ohm. It would be good if the value of **Xc were 47ohm** on the given frequency. 
 
 Xc = 1 / (2 * PI * f * C) from this: **C = 1 / (2 * PI * f * Xc)**
 
- - on the 1MHz: C = 1 / (2 * PI * 1e6 * 47) = 3.38nF
- - on the 2MHz: C = 1,69nF
- - on the 3MHz: C = 1,12nF
+ - on the 300kHz: C = 11.2nF
+ - on the 455kHz: C = 7.4nF
+ - on the 800kHz: C = 4.2nF
+ - on the 1MHz: C = 3.38nF
+ - on the 2MHz: C = 1.69nF
+ - on the 3MHz: C = 1.12nF
  - ...
  - on the 10MHz: C = 338pF
 
-So, my **1nF** is a compromissed choice for MF and lower HF band.
+So, this circut is a tuned amplifier for 455kHz intermediate frequency, my **10nF** is a compromissed choice for IF. **Yes**, i can also see 8.2nF were closer to calculated 7.4nF, but in practice it's good to have a little reserve.
+
+**LC tank**
+
+The drain circuit contains an LC tank, acting as the load resistor, therefor this amplifier called tuned amplifier (with capacitive coupling). What is the goal?
 
 
 
