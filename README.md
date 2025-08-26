@@ -40,7 +40,7 @@ So, this circut is a tuned amplifier for 455kHz intermediate frequency, my **10n
 
 **LC tank**
 
-The drain circuit contains an LC tank, acting as the load resistor, therefor this amplifier called **tuned amplifier** (with capacitive coupling). **What is the goal?** ❤️ Amplify at the given frequency (f0 of LC tank) and attenuate at the other frequency. ❤️
+The drain circuit contains an LC tank, acting as the load resistor, therefor this amplifier called **tuned amplifier** (with capacitive coupling). **What is the goal?** ❤️ Amplify at the given frequency (f0 of LC tank) and attenuate at the other frequency.
 
 So this is a parallel LC circuit, and this is the formula:
 
@@ -48,8 +48,8 @@ So this is a parallel LC circuit, and this is the formula:
 
 We can now calculate: f0 = 1 / (2 * pi * sqrt(150e-6 * 820e-9) = 453.8kHz
 
-⚠️ **Warrning!** ⚠️ **You cannot generate exactly 455kHz with these parameters, ca. 815.6pF were the good value.** ❤️ Thank God ❤️ usually there is a large variaton in values, you can find such a capacitor that is close to 816pF. 
+⚠️ **Warrning!** ⚠️ **You cannot generate exactly 455kHz with these parameters, ca. 815.6pF were the good value.** ❤️ Thank God usually there is a large variaton in values, you can find such a capacitor that is close to 816pF. 
 
-Of course, **the right solution** is a smaller capacitor and a parallel variable capacitor in this case.
+Of course, **the right solution** is a smaller capacitor and a parallel variable capacitor in this case. And **the best solution** is an IF transformer with adjustable value.
 
 
