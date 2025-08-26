@@ -21,7 +21,7 @@ The coupling capacitors (C1, C2) route the signals to the two gates. These value
 The network of source includes a resistor and a capacitor. In this case the resistor is a tool for biasing of MOSFET (it's also called **source degeneration**, further information can be found at the following link: [ECE 255, MOSFET Basic
 Configurations](https://engineering.purdue.edu/wcchew/ece255s18/ece%20255%20s18%20latex%20pdf%20files/ece255Lecture_16_Mar8_MOSFET_Basic_Config.pdf)) The C3 is a bypass capacitor, AC acts as a short circuit (makes higher gain). **That's a good guestion, which bypass-capacitor size is the right one?** What is our goal? Our goal: **At a given frequency, Xc should bypass Rs!** It's a practival formula: **Xc <= Rs / 10** 
 
-**Let's calc!**
+### Let's calc!
 
 So, in this case the value of Rs is 470ohm. It would be good if the value of **Xc were 47ohm** on the given frequency. 
 
@@ -38,7 +38,7 @@ Xc = 1 / (2 * PI * f * C) from this: **C = 1 / (2 * PI * f * Xc)**
 
 So, this circut is a tuned amplifier for 455kHz intermediate frequency, my **10nF** is a compromissed choice for IF. 🖤 **Yes**, i can also see 8.2nF were closer to calculated 7.4nF, but in practice **it's good to have a little reserve.**
 
-**LC tank**
+### LC tank
 
 The drain circuit contains an LC tank, acting as the load resistor, therefor this amplifier called **tuned amplifier** (with capacitive coupling). **What is the goal?** ❤️ Amplify at the given frequency (f0 of LC tank) and attenuate at the other frequency.
 
@@ -51,5 +51,35 @@ We can now calculate: f0 = 1 / (2 * pi * sqrt(150e-6 * 820e-9) = 453.8kHz
 ⚠️ **Warrning!** ⚠️ **You cannot generate exactly 455kHz with these parameters, ca. 815.6pF were the good value.** ❤️ Thank God usually there is a large variaton in values, you can find such a capacitor that is close to 816pF. 
 
 Of course, **the right solution** is a smaller capacitor and a parallel variable capacitor in this case. And **the best solution** is an IF transformer with adjustable value.
+
+### Bandwidth
+
+The LC tank has ohmic losses. According to manufacturer's specifications the capacitor has ca. 0.17ohm series resistance, the coil is 0.2ohm resistance in real.
+
+Let's see what is the angular frequency at this frequency: 
+
+<img width="110" height="37" alt="image" src="https://github.com/user-attachments/assets/fab48ce1-5305-4def-b4fe-db941b0b031b" />
+
+w0 = 2 851 328 rad/s
+
+Calc the Xl and Xc:
+
+<img width="131" height="96" alt="image" src="https://github.com/user-attachments/assets/c237dd7d-b53c-4294-8aef-d6de82970351" />
+
+Xc = 427.9ohm
+
+<img width="162" height="63" alt="image" src="https://github.com/user-attachments/assets/64658592-6e54-4301-9101-f22d655017ce" />
+
+Xl = 427.8ohm
+
+Losses of coil at the f0:
+
+<img width="345" height="77" alt="image" src="https://github.com/user-attachments/assets/bd5f142b-a1d4-4b1e-b4ed-1ec57fddf457" />
+
+Losses of capacitor at the f0:
+
+<img width="350" height="70" alt="image" src="https://github.com/user-attachments/assets/2a81801a-d4ec-4867-af34-7db26939ef56" />
+
+
 
 
