@@ -92,7 +92,8 @@ The Q-factor:
 
 And the Bandwidth:
 
-<img width="276" height="176" alt="image" src="https://github.com/user-attachments/assets/7e1f9b7e-a0e9-401c-ae1a-99aff11cd74a" />
+<img width="326" height="82" alt="image" src="https://github.com/user-attachments/assets/b514d5e1-931d-4f5f-a4a8-d012ff720bb3" />
+
 
 
 
