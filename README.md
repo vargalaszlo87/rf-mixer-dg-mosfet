@@ -64,13 +64,9 @@ w0 = 2 851 328 rad/s
 
 Calc the Xl and Xc:
 
-<img width="131" height="96" alt="image" src="https://github.com/user-attachments/assets/c237dd7d-b53c-4294-8aef-d6de82970351" />
+<img width="412" height="51" alt="image" src="https://github.com/user-attachments/assets/5af3b83a-fd13-45aa-a92c-a66ba464ac36" />
 
-Xc = 427.9ohm
-
-<img width="162" height="63" alt="image" src="https://github.com/user-attachments/assets/64658592-6e54-4301-9101-f22d655017ce" />
-
-Xl = 427.8ohm
+<img width="423" height="72" alt="image" src="https://github.com/user-attachments/assets/a4b7c784-3b3f-4b28-907d-2cbc77816b35" />
 
 Losses of coil at the f0:
 
