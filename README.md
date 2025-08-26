@@ -27,11 +27,11 @@ So, in this case the value of Rs is 470ohm. It would be good if the value of Xc 
 
 Xc = 1 / (2 * PI * f * C) from this: **C = 1 / (2 * PI * f * Xc)**
 
-on the 1MHz: C = 1 / (2 * PI * 1e6 * 47) = 3.38nF
-on the 2MHz: C = 1,69nF
-on the 3MHz: C = 1,12nF
-...
-on the 10MHz: C = 338pF
+ - on the 1MHz: C = 1 / (2 * PI * 1e6 * 47) = 3.38nF
+ - on the 2MHz: C = 1,69nF
+ - on the 3MHz: C = 1,12nF
+ - ...
+ - on the 10MHz: C = 338pF
 
 So, my **1nF** is a compromissed choice for MF and lower HF band.
 
