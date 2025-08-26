@@ -76,6 +76,23 @@ Losses of capacitor at the f0:
 
 <img width="350" height="70" alt="image" src="https://github.com/user-attachments/assets/2a81801a-d4ec-4867-af34-7db26939ef56" />
 
+Total loss of the LC at the f0:
+
+<img width="410" height="169" alt="image" src="https://github.com/user-attachments/assets/04bdabdf-b353-4568-b427-5e9cfea5cc6b" />
+
+⚠️ **Warrning!** ⚠️ If you do not use a parallel resistor (R4), the bandwidth will be too narrow. Our goal is ca. 9kHz wide bandwidth.
+
+The total resistance: 
+
+<img width="356" height="175" alt="image" src="https://github.com/user-attachments/assets/46486cc6-0273-4496-9743-43fb35742573" />
+
+The Q-factor:
+
+<img width="276" height="176" alt="image" src="https://github.com/user-attachments/assets/15fa0564-918c-4894-acdc-8e03b1e858d8" />
+
+And the Bandwidth:
+
+<img width="276" height="176" alt="image" src="https://github.com/user-attachments/assets/7e1f9b7e-a0e9-401c-ae1a-99aff11cd74a" />
 
 
 
