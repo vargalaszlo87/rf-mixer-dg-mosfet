@@ -36,12 +36,20 @@ Xc = 1 / (2 * PI * f * C) from this: **C = 1 / (2 * PI * f * Xc)**
  - ...
  - on the 10MHz: C = 338pF
 
-So, this circut is a tuned amplifier for 455kHz intermediate frequency, my **10nF** is a compromissed choice for IF. **Yes**, i can also see 8.2nF were closer to calculated 7.4nF, but in practice it's good to have a little reserve.
+So, this circut is a tuned amplifier for 455kHz intermediate frequency, my **10nF** is a compromissed choice for IF. 🖤 **Yes**, i can also see 8.2nF were closer to calculated 7.4nF, but in practice **it's good to have a little reserve.**
 
 **LC tank**
 
-The drain circuit contains an LC tank, acting as the load resistor, therefor this amplifier called tuned amplifier (with capacitive coupling). What is the goal?
+The drain circuit contains an LC tank, acting as the load resistor, therefor this amplifier called **tuned amplifier** (with capacitive coupling). **What is the goal?** ❤️ Amplify at the given frequency (f0 of LC tank) and attenuate at the other frequency. ❤️
 
+So this is a parallel LC circuit, and this is the formula:
 
+<img width="150" height="44" alt="image" src="https://github.com/user-attachments/assets/beb8ffd4-24f7-46f2-979e-e31d14379a7a" />
+
+We can now calculate: f0 = 1 / (2 * pi * sqrt(150e-6 * 820e-9) = 453.8kHz
+
+⚠️ **Warrning!** ⚠️ **You cannot generate exactly 455kHz with these parameters, ca. 815.6pF were the good value.** ❤️ Thank God ❤️ usually there is a large variaton in values, you can find such a capacitor that is close to 816pF. 
+
+Of course, **the right solution** is a smaller capacitor and a parallel variable capacitor in this case.
 
 
